@@ -15,6 +15,26 @@ function deleteText() {
 function incrementCounter() {
   const zahl = document.querySelector("#counter")
   let num = parseInt(zahl.textContent)
-  num = num + 1
+  num += 1
+  zahl.textContent = num + " Cookies"
+}
+
+function decrementCounter () {
+  const zahl = document.querySelector("#counter")
+  let num = parseInt(zahl.textContent)
+  num -= 1
+  zahl.textContent = num + " Cookies"
+}
+
+function resetCounter () {
+  const zahl = document.querySelector("#counter")
+  let num = parseInt(zahl.textContent)
+  num = 0
   zahl.textContent = num
+}
+
+function writeText () {
+  const output = document.querySelector("#output")
+  const input = document.querySelector("#input")
+  output.textContent = "\n" + input.value
 }

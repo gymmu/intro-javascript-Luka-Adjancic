@@ -46,14 +46,26 @@
       </div>
     </section>
     <section>
-      <h3>Zähler addieren</h3>
-      <div class="content" id="to-delete">
-        Mann die Zahl kann auf Knopfdruck um eins addieren.
+      <h3>Zähler addieren, subtraieren und zurücksetzen</h3>
+      <div class="content">
+        Mann kann die Zahl auf Knopfdruck um eins addieren, mann kann die Zahl auf Knopfdruck um eins subtraieren und zurücksetzen.
         <p id="counter">0</p>
-        <p>Cookies</p>
       </div>
       <div class="center">
-        <button onclick="incrementCounter()">Text Löschen</button>
+        <button onclick="incrementCounter()">Plus eins</button>
+        <button onclick="decrementCounter()">Minus eins</button>
+        <button onclick="resetCounter()">Zurücksetzen</button>
+      </div>
+    </section>
+    <section>
+      <h3>Text eingeben</h3>
+      <div class="content">
+        Mann kann den Text der Webseite in der eingabe erstellen.
+        <p id="output"></p>
+      </div>
+      <div class="center">
+        <input id="input" type="text">
+        <button onclick="writeText()">Weiter</button>
       </div>
     </section>
   </main>
